@@ -564,7 +564,7 @@ class _BigQuerySource(dataflow_io.NativeSource):
         query results. The default value is :data:`True`.
       kms_key (str): Optional Cloud KMS key name for use when creating new
         tables.
-      temp_dataset (``google.cloud.bigquery.dataset.DatasetReference``):
+      temp_dataset (``apache_beam.io.gcp.internal.clients.bigquery.DatasetReference``):
         The dataset in which to create temporary tables when performing file
         loads. By default, a new dataset is created in the execution project for
         temporary tables.
